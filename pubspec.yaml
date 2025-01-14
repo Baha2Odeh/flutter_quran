@@ -18,7 +18,7 @@ dependencies:
 
 
   # local storage
-  shared_preferences: ^2.3.2
+  shared_preferences: ^2.3.4
 
   #UI
   fluttertoast: ^8.2.8
