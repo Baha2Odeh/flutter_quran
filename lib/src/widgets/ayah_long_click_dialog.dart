@@ -23,7 +23,7 @@ class AyahLongClickDialog extends StatelessWidget {
                 const Text(
                   'أضف علامة',
                   style: TextStyle(
-                    color: Colors.black,
+                    //color: Colors.black,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),

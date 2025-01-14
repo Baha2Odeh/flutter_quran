@@ -1,4 +1,5 @@
 class QuranConstants {
+
   static const List<String> quranHizbs = [
     'الأول',
     'الثاني',

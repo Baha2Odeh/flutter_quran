@@ -13,7 +13,7 @@ class _DefaultDrawer extends StatelessWidget {
         children: [
           ListTile(
             trailing: const Icon(Icons.search_outlined),
-            title: const Text('بحث'),
+            title: Text(FlutterQuran.translations['search']!),
             onTap: () async {
               Navigator.of(context).pop();
               Navigator.of(context).push(MaterialPageRoute(
@@ -21,11 +21,11 @@ class _DefaultDrawer extends StatelessWidget {
             },
           ),
           ExpansionTile(
-            title: const Text('الفهرس'),
+            title: Text(FlutterQuran.translations['index']!),
             expandedCrossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ExpansionTile(
-                title: const Text('الجزء'),
+                title: Text(FlutterQuran.translations['juz']!),
                 expandedCrossAxisAlignment: CrossAxisAlignment.start,
                 children: List.generate(
                     jozzs.length,
@@ -62,7 +62,7 @@ class _DefaultDrawer extends StatelessWidget {
                     ),
               ),
               ExpansionTile(
-                title: const Text('السورة'),
+                title: Text(FlutterQuran.translations['surah']!),
                 expandedCrossAxisAlignment: CrossAxisAlignment.start,
                 children: List.generate(
                     surahs.length,
@@ -80,7 +80,7 @@ class _DefaultDrawer extends StatelessWidget {
             ],
           ),
           ExpansionTile(
-            title: const Text('العلامات'),
+            title: Text(FlutterQuran.translations['bookmarks']!),
             expandedCrossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(

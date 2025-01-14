@@ -50,7 +50,7 @@ class _QuranPageBottomInfoWidgetState extends State<QuranPageBottomInfoWidget> {
         ),
         Text(widget.page.toString().toArabic(),
             style: const TextStyle(
-              color: Colors.black,
+              //color: Colors.black,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             )),

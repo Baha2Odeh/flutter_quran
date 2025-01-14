@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_quran/flutter_quran.dart';
 
 import '../models/bookmark.dart';
 import '../repository/quran_repository.dart';
@@ -10,12 +11,12 @@ class BookmarksCubit extends Cubit<List<Bookmark>> {
 
   final QuranRepository _quranRepository;
   final Bookmark searchBookmark =
-      Bookmark(id: 3, colorCode: 0xFFF7EFE0, name: 'search Bookmark');
+      Bookmark(id: 3, colorCode: 0xFFF7EFE0, name: FlutterQuran.translations['search_bookmark']!);
 
   final List<Bookmark> _defaultBookmarks = [
-    Bookmark(id: 0, colorCode: 0xAAFFD354, name: 'العلامة الصفراء'),
-    Bookmark(id: 1, colorCode: 0xAAF36077, name: 'العلامة الحمراء'),
-    Bookmark(id: 2, colorCode: 0xAA00CD00, name: 'العلامة الخضراء'),
+    Bookmark(id: 0, colorCode: 0xAAFFD354, name: FlutterQuran.translations['yellow_mark']!),
+    Bookmark(id: 1, colorCode: 0xAAF36077, name: FlutterQuran.translations['red_mark']!),
+    Bookmark(id: 2, colorCode: 0xAA00CD00, name: FlutterQuran.translations['green_mark']!),
   ];
   List<Bookmark> bookmarks = [];
 

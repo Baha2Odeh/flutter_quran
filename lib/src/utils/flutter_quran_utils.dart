@@ -117,11 +117,23 @@ class FlutterQuran {
 
   /// [hafsStyle] is the default style for Quran so all special characters will be rendered correctly
   final hafsStyle = const TextStyle(
-    color: Colors.black,
+    //color: Colors.black,
     fontSize: 23.55,
     fontFamily: "hafs",
     package: "flutter_quran",
   );
+
+  static Map<String, String> translations = {
+    'bookmarks': 'Bookmarks',
+    'search_bookmark': 'search Bookmark',
+    'yellow_mark': 'Yellow Mark',
+    'red_mark': 'Red Mark',
+    'green_mark': 'Green Mark',
+    'surah':'surah',
+    'search': 'Search',
+    'index': 'Index',
+    'juz':'Juz',
+  };
 
   ///Singleton factory
   static final FlutterQuran _instance = FlutterQuran._internal();

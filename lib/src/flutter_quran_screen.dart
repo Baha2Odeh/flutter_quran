@@ -275,7 +275,9 @@ class _FlutterQuranSearchScreenState extends State<_FlutterQuranSearchScreen> {
                   },
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.black),
+                      borderSide: BorderSide(
+                          //color: Colors.black
+                      ),
                     ),
                     hintText: 'بحث',
                   ),
@@ -298,7 +300,7 @@ class _FlutterQuranSearchScreenState extends State<_FlutterQuranSearchScreen> {
                                   },
                                 ),
                                 const Divider(
-                                  color: Colors.grey,
+                                  //color: Colors.grey,
                                   thickness: 1,
                                 ),
                               ],
