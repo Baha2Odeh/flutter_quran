@@ -12,7 +12,7 @@ class AyahLongClickDialog extends StatelessWidget {
       child: Dialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         elevation: 3,
-        backgroundColor: const Color(0xFFF7EFE0),
+        // backgroundColor: const Color(0xFFF7EFE0),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: SingleChildScrollView(
@@ -20,8 +20,8 @@ class AyahLongClickDialog extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'أضف علامة',
+                Text(
+                  FlutterQuran.translations['add_bookmark']!,
                   style: TextStyle(
                     //color: Colors.black,
                     fontSize: 15,
@@ -33,7 +33,7 @@ class AyahLongClickDialog extends StatelessWidget {
                     .map((bookmark) => ListTile(
                           leading: Icon(
                             Icons.bookmark,
-                            color: Color(bookmark.colorCode),
+                            // color: Color(bookmark.colorCode),
                           ),
                           title: Text(
                             bookmark.name,
@@ -57,14 +57,14 @@ class AyahLongClickDialog extends StatelessWidget {
                                 .firstWhere((element) => element.id == ayah.id)
                                 .ayah))
                         .then((value) =>
-                            ToastUtils().showToast("تم النسخ الى الحافظة"));
+                            ToastUtils().showToast(FlutterQuran.translations['copied_successfully']!));
                     Navigator.of(context).pop();
                   },
-                  child: const ListTile(
-                      title: Text("نسخ الى الحافظة"),
+                  child: ListTile(
+                      title: Text(FlutterQuran.translations['copy_to_clipboard']!),
                       leading: Icon(
                         Icons.copy_rounded,
-                        color: Color(0xFF798FAB),
+                        // color: Color(0xFF798FAB),
                       )),
                 ),
               ],

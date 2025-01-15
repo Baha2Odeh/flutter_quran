@@ -133,6 +133,9 @@ class FlutterQuran {
     'search': 'Search',
     'index': 'Index',
     'juz':'Juz',
+    'add_bookmark':'Add Bookmark',
+    'copy_to_clipboard':'Copy to Clipboard',
+    'copied_successfully':'Copied Successfully',
   };
 
   ///Singleton factory
