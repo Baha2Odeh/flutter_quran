@@ -33,7 +33,7 @@ class AyahLongClickDialog extends StatelessWidget {
                     .map((bookmark) => ListTile(
                           leading: Icon(
                             Icons.bookmark,
-                            // color: Color(bookmark.colorCode),
+                            color: Color(bookmark.colorCode),
                           ),
                           title: Text(
                             bookmark.name,
